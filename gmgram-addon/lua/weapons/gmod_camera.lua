@@ -1,4 +1,3 @@
-
 AddCSLuaFile()
 
 SWEP.ViewModel = Model( "models/weapons/c_arms_animations.mdl" )
@@ -63,6 +62,7 @@ end
 function SWEP:Initialize()
 	self:SetHoldType( "camera" )
 	self.Owner:SetNWBool("GMGramGetCameraModeCanSwitch", true)
+	print("loaded fine");
 end
 
 --
